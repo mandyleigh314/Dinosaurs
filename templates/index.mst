@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mandy's Magnificent Museum of Dinosaurs</title>
+      <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="container">
+    <h1>Mandy's Magnificent Museum of Dinosaurs</h1>
+    <div class="dinoList">
+    <ul>
+      {{#dinos}}
+      <li>
+        <img src={{img}}>
+        <a href="/info/{{id}}"><h3>{{species}}</h3></a>
+      </li>
+      {{/dinos}}
+      </ul>
+    </div>
+    </div>
+  </body>
+</html>
